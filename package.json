@@ -1,0 +1,29 @@
+{
+  "name": "Delivery",
+  "version": "1.0.0",
+  "description": "\"Test api with two DataBase\"",
+  "main": "app.js",
+  "author": "Sniper",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cli": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.23",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2",
+    "sequelize": "^6.3.3",
+    "sequelize-auto": "^0.5.1",
+    "sequelize-cli": "^6.2.0",
+    "shortid": "^2.2.15",
+    "username-generator": "^1.1.0"
+  }
+}

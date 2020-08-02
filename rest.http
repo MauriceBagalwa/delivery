@@ -1,0 +1,61 @@
+
+POST https://localhost:1737/users
+content-type: application/json
+{
+name: "Bin",
+  lastname: "momo",
+  password: "123",
+  level: 1,
+}
+
+### Home page
+GET http://localhost:4000/ju
+###
+POST  http://localhost:4000/auth/sigup
+Content-Type: application/json
+
+
+{
+  "name":"Delord",
+ "lastname":"Kahumba",
+ "mail":"kyu@gmail.com",
+ "password":"1234"
+}
+###
+GET  http://localhost:4000/auth/sigin
+Content-Type: application/json
+
+{
+ "mail":"k34@gmail.com",
+ "password":"1234"
+}
+###
+DELETE   http://localhost:4000/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTYxNjk2ODEsImV4cCI6MTU5NjE2OTc0MSwiYXVkIjoiNWYxZDE3MzgyMWY0M2IyMGM0OTc3MjQ2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.5E6q8BmEFyKx9K9SpXgd-yEzXB6jIjUoJ5sqOdymTTg
+
+###
+POST http://localhost:4000/auth/refresh-token
+Content-Type: : application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTYxNjk2MDYsImV4cCI6MTU5NjE2OTkwNiwiYXVkIjoiNWYxZDE3MzgyMWY0M2IyMGM0OTc3MjQ2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.cG5zMyxTGUTFPvR35GCwxd0E8eeXb5gDgshpHwI8iJ8"
+}
+
+###
+
+POST http://localhost:4000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTYxNjk2MDYsImV4cCI6MTU5NjE2OTkwNiwiYXVkIjoiNWYxZDE3MzgyMWY0M2IyMGM0OTc3MjQ2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.cG5zMyxTGUTFPvR35GCwxd0E8eeXb5gDgshpHwI8iJ8"
+}
+
+###
+POST http://localhost:4000/auth/email
+Content-Type: application/json
+
+{
+   "to": "dev.maurice1317@gmail.com", 
+   "subject": "test d'envoie des Email",
+  "text":"->->-> 2 Veillez confirmé votre inscription en cliquant sur www.google.com"
+}
