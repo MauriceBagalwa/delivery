@@ -5,18 +5,18 @@ module.exports = {
   types: (req, res, next) => {
     const { type } = req.body;
     console.log(type);
-    typesR.typeRequest
+    typesR.typerequest
       .findOne({ where: { type: type } })
       .then((find) => {
         if (find) {
-          res.status(400).json({ error: `Type ${type} is already exist` });
+          res.status(400).json({ error: `Type "${type}" is already exist` });
         } else {
           const value = {
             id: shortId.generate(),
             type: type,
           };
-          value
-            .create()
+          typesR.typerequest
+            .create(value)
             .then((iscreate) => {
               res.send({ iscreate });
             })

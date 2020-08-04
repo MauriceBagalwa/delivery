@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
   return sequelize.define(
-    "typeRequest",
+    "typerequest",
     {
       id: {
         type: DataTypes.STRING,
@@ -16,16 +16,16 @@ module.exports = function (sequelize, DataTypes) {
         defaultValue: true,
       },
       createdAt: {
-        type: DataTypes.DATA,
+        type: DataTypes.DATE,
         defaultValue: DataTypes.NOW,
       },
       updateAt: {
-        type: DataTypes.DATA,
+        type: DataTypes.DATE,
         defaultValue: DataTypes.NOW,
       },
     },
     {
-      tableName: "typereRequest",
+      tableName: "typerequest",
       timestamps: false,
     }
   );

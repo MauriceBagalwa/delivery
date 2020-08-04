@@ -1,4 +1,6 @@
 const userCtrl = require("./Usercontroller");
-module.exports= {
+const typeCtrl = require("./type");
+module.exports = {
   userCtrl,
+  typeCtrl,
 };

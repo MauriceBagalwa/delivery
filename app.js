@@ -24,6 +24,7 @@ app.get("/", async (res, req, next) => {
 app.use(bodyParser.json());
 app.use("/user", router._user);
 app.use("/auth", router._auth);
+app.use("/setting", router._type);
 
 /*
 ? Gestionnaire des Erreurs
